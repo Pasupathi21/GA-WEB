@@ -1,0 +1,64 @@
+@import "../../shared/style/app-mixins.scss";
+@import "../../shared/style/app-colors.scss";
+
+.body-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: auto; 
+
+  .container-images {
+    height: auto;
+    display: flex;
+    // flex-wrap: wrap;
+    flex-direction: row;
+
+    .tree-container {
+        width: 50%;
+      &-image {
+        min-height: 200px;
+        height: 550px;
+        width:450;
+        object-fit: cover;
+        overflow: hidden;
+      }
+    }
+    .welcome-container {
+
+      &-image {
+        height: 100px;
+        transform: rotate(-30deg);
+        margin-left: -140px;
+      }
+    }
+
+  }
+
+  .container-content {
+    margin: 10px;
+    display: flex;
+    width: calc(100% / 2);
+    align-items: center;
+    &-section {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+
+      p {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+        color: $whiteSmoke;
+      }
+
+      .btn-explore {
+        @include exploreButton;
+        font-family: 'Roboto Condensed', sans-serif;
+        &:hover {
+          background-color: rgba(74, 235, 28, 100);
+          width: auto
+        }
+      }
+    }
+    
+  }
+}

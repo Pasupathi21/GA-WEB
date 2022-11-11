@@ -1,0 +1,21 @@
+@import "./app-colors.scss";
+
+
+@mixin appButtonOne {
+    height: 30px;
+    width: 80px;
+    border-radius: 30px;
+    background: none;
+    cursor: pointer;
+}
+
+@mixin exploreButton {
+    height: 45px;
+    width: 80%;
+    border-radius: 30px;
+    background-color: rgba(50, 168, 157, 0.5);
+    font-family: 'Roboto Condensed', sans-serif;
+    color: $whiteSmoke;
+    cursor: pointer;
+    border: none;
+}

@@ -1,0 +1,51 @@
+@import "../../shared/style/app-mixins.scss";
+@import "../../shared/style/app-colors.scss";
+
+.container-cover__image {
+  .header-container {
+    display: grid;
+    // margin: 15px;
+    // padding: 5px;
+    background-color: 4px solid red;
+    grid-template-columns: repeat(2, 1fr);
+
+    .app-logo {
+      img {
+        height: 70px;
+        width: 70px;
+        border-radius: 33px;
+      }
+    }
+
+    .app-title {
+      margin-left: 2rem;
+    }
+
+    .logo-with-title {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .title {
+      font-family: 'Comfortaa', cursive;
+      color: $whiteSmoke;
+      font-weight: 800;
+    }
+  }
+}
+
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+  .navbar-section {
+    .btn {
+      @include appButtonOne;
+      margin: 5px;
+      font-family: 'Roboto Condensed', sans-serif;
+      color: $whiteSmoke;
+    }
+  }
+}

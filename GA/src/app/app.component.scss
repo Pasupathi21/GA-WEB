@@ -1,0 +1,40 @@
+@import "./shared/style/app-colors.scss";
+
+
+.app-container {
+  display: grid;
+  height: 100vh;
+  background-color: 4px solid black;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-image: linear-gradient(to left, $pink, $blue);
+  grid-template-columns: 1fr;
+  // gap: 5px;
+
+  &-header {
+    height: 15vh;
+    background: url("https://images.pexels.com/photos/1933317/pexels-photo-1933317.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    object-fit: fill; 
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 5px 5px 0px 5px;
+    // border-color: 5px solid red;
+    border-bottom-color:  2rem solid red;
+  }
+
+  &-body {
+    height: 75vh;
+  }
+
+  &-footer {
+    height: 10vh;
+  }
+}
+
+hr {
+  height: 2px;
+  border: none;
+  background-color: rgba(245, 245, 245, 0.2);
+}
